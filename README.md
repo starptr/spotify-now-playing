@@ -13,12 +13,12 @@ EMAIL_EXPECTED=
 ```
 
   - `SPOTIFY_CLIENTID` and `SPOTIFY_CLIENTSECRET` are obtained from an app in [the Spotify developer dashboard](https://developer.spotify.com/dashboard/applications).
-  - `SPOTIFY_REDIRECTURI` is the same value as set in the same app as above.
+  - `SPOTIFY_REDIRECTURI` is the same value as set in the same app as above (i.e. URL to the callback endpoint).
   - `EMAIL_EXPECTED` is a passive check to ensure that the intended user is authenticating.
   
 2. Run these:
 
 ```
-$ npm ci
+$ npm build
 $ npm start
 ```
