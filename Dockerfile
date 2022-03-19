@@ -1,6 +1,6 @@
 FROM node:16 AS build
 WORKDIR /root/
-COPY package-lock.json ./
+COPY package.json package-lock.json ./
 RUN npm ci
 COPY . .
 RUN npm run build
